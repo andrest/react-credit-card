@@ -1,6 +1,6 @@
 'use strict'
 
-import React from 'react';
+import react from 'react';
 
 class CardUI extends React.Component {
     render() {
