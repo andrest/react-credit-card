@@ -30,7 +30,7 @@
         .#{$name}-#{$i} {
             width: percentage($i/100);
 
-            &.grid {
+            &.cardGrid {
                 float: left;
             }
         }
@@ -49,7 +49,7 @@
     .#{$name}-33 {
         width: 33.33333%;
 
-        &.grid {
+        &.cardGrid {
             float: left;
         }
     }
@@ -65,7 +65,7 @@
     .#{$name}-66 {
         width: 66.66667%;
 
-        &.grid {
+        &.cardGrid {
             float: left;
         }
     }
@@ -81,7 +81,7 @@
 
 
 %grid-collapse {
-    .grid {
+    .cardGrid {
         padding-right: 0;
 
         &:first-child {
@@ -95,7 +95,7 @@
     @extend %grid-collapse;
 
     @if ($padding-left) {
-        .grid {
+        .cardGrid {
             padding-left: $padding-left;
         }
     }
@@ -118,7 +118,7 @@
     padding-left: $grid-padding;
 }
 
-.grid {
+.cardGrid {
     padding-right: $grid-padding;
     padding-left: $grid-padding;
     position: relative;

@@ -264,7 +264,7 @@ class CreditCard extends React.Component {
         var installmentsContent = <div></div>;
 
         if (this.props.installments) {
-          installmentsContent = <div className={classnames('grid large-100 small-100 medium-100 ds-payment-installments', this.state.errorInstallments)}>
+          installmentsContent = <div className={classnames('cardGrid large-100 small-100 medium-100 ds-payment-installments', this.state.errorInstallments)}>
               <Select
                   searchable={false}
                   placeholder={'Escolha número de parcelas'}
@@ -291,7 +291,7 @@ class CreditCard extends React.Component {
                       cardType={typeCard} />
 
               <form className="ds-payment-form">
-                  <div className={classnames('grid large-100', this.state.errorCardNumber)}>
+                  <div className={classnames('cardGrid large-100', this.state.errorCardNumber)}>
                       <input
                           placeholder="Número cartão"
                           type="text"
@@ -306,7 +306,7 @@ class CreditCard extends React.Component {
                       </div>
                   </div>
 
-                  <div className={classnames('grid large-100', this.state.errorHolderName)}>
+                  <div className={classnames('cardGrid large-100', this.state.errorHolderName)}>
                       <input
                           placeholder="Nome (igual no cartão)"
                           value={this.state.HolderName}
@@ -322,7 +322,7 @@ class CreditCard extends React.Component {
                           </div>
                   </div>
 
-                  <div className={classnames('grid large-60 medium-60 small-60', this.state.errorExpire)}>
+                  <div className={classnames('cardGrid large-60 medium-60 small-60', this.state.errorExpire)}>
                       <input
                           placeholder="Validade (MM/AA)"
                           type="text"
@@ -338,7 +338,7 @@ class CreditCard extends React.Component {
                       </div>
                   </div>
 
-                  <div className={classnames('grid large-40 medium-40 small-40', this.state.errorCvvNumber)}>
+                  <div className={classnames('cardGrid large-40 medium-40 small-40', this.state.errorCvvNumber)}>
                       <input
                           placeholder="CVV"
                           type="text"
@@ -357,7 +357,7 @@ class CreditCard extends React.Component {
 
                   {installmentsContent}
 
-                  <div className="grid large-100 medium-100 small-100">
+                  <div className="cardGrid large-100 medium-100 small-100">
                       <button type="submit" className="ds-payment-button" onClick={this.handleSubmit}>Pagar</button>
                   </div>
               </form>
