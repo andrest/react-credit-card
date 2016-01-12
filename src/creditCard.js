@@ -1,6 +1,6 @@
 'use strict'
 
-import react from 'react';
+import React from 'react';
 import Select from 'react-select';
 import creditcard from 'creditcard';
 import classnames from 'classnames';
